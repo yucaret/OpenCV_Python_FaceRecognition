@@ -40,18 +40,16 @@ while True:
     #Convertimos la imagen del frame de BGR a Gris
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         
-    #Cambiamos el tamaño del frame
-    #rgb = imutils.resize(frame, width=300)
-    #r = frame.shape[1] / float(rgb.shape[1])
-    
+     # Lista de Caras Detectadas
     faces = faceCascade.detectMultiScale(rgb, scaleFactor=1.2, minNeighbors=8, flags = cv2.CASCADE_SCALE_IMAGE)
 
+    # Por cada Cara Detectada
     for (x, y, w, h) in faces:
-        #resizedImage = cv2.resize(rgb[y: y + h, x: x + w], (110,110), interpolation = cv2.INTER_AREA)
+        
+        # Obtenemos la imagen de la cara
         image = rgb[y: y + h, x: x + w]
         
-        #image = cv2.equalizeHist(image)
-        
+        #Cambiamos el tamaño de la imagen a 200 por 200 
         imageResized = cv2.resize(image, (200,200), interpolation = cv2.INTER_AREA)
         imageNew = imageResized
         
@@ -60,7 +58,7 @@ while True:
         nombre = "desconocido"
         
         if(conf < 48):
-            #cv2.puttext(cv2.fromarray(frame), str(nbr_predicted), (x,y+h),font, 255)
+            
             colorcuadro = (0, 255, 0)
             colortexto = (255, 0, 0)
             nombre = usuarios.get(str(nbr_predicted))
@@ -87,15 +85,13 @@ while True:
     if writer is not None:
         writer.write(frame)
 
-    # verifica si se va a mostrar la imagen del frame como salida
-    #if args["display"] > 0:
-    if 1 > 0:
-        cv2.imshow("Frame", frame)
-        key = cv2.waitKey(1) & 0xFF
+    # Mostrar la imagen del frame como salida
+    cv2.imshow("Frame", frame)
+    key = cv2.waitKey(1) & 0xFF
 
-        # Si se escribe "q" salimos del while
-        if key == ord("q"):
-            break
+    # Si se escribe "q" salimos del while
+    if key == ord("q"):
+        break
 
 # Destruimos todas las pantallas y cerramos
 cv2.destroyAllWindows()

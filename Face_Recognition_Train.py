@@ -95,10 +95,10 @@ for (i, imagePath) in enumerate(imagePaths):
         usuarios['usuarios'].update({str(index): name})
         indexAnt = index
 
-# La utpla de usuarios se guarda como un archivos json llamado usuarios.txt
+# La tupla de usuarios se guarda como un archivos json llamado usuarios.txt
 with open('usuarios.txt', 'w') as outfile: json.dump(usuarios, outfile)
 
-# Entremos nuestro modelo con las imagenes
+# Entrenamos nuestro modelo con las imagenes
 recognizer.train(images, np.array(indexes))
 
 # Guardamos el resultado en un archivo usuarios.yml 
