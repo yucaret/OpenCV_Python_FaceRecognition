@@ -8,27 +8,23 @@
 - OpenCV_Contrib para Python
 - Tener un sistema de archivos de la siguiente manera
 
-  +FaceRecognition (Carpeta Principal)
-      +dataset (Carpeta que contendra todas las imagenes de las personas que se quiere reconocer, recomiendo unas 50 imagenes por persona)
+    +FaceRecognition (Carpeta Principal)
+      +dataset (Carpeta que contendra todas las imagenes de las personas que se quiere reconocer, recomiendo unas 50 por persona)
           +claudia_caceres (El nombre de la carpeta debe de tener el formato Nombre_Apellido)
               -U1_ClaudiaCaceres_1.jpg (El nombre de la imagen debe de tener el formato U#Identificador_NombreApellido_#Consecutivo)
               -U1_ClaudiaCaceres_2.bmp
               - ...
               -U1_ClaudiaCaceres_30.jpg
-          
           +jorge_vicente
               -U2_JorgeVicente_1.jpg
               -U2_JorgeVicente_2.jpg
               - ...
               -U2_JorgeVicente_50.bmp
-              
           +Nombre_Apellido3
           ...
-          
           +Nombre_ApellidoN
       +output
           - aquí se descargará el video
-      
       -Face_Recognition_Train.py (archivo que entrenara el algoritmo)
       -Face_Recognition_Video.py (archivo que levantara el video, utilizara el algoritmo entrenado y detectara y reconocera los rostros)
       -haarcascade_frontalface_default.xml  (Archivo entrenado para detectar rostro, propio del OpenCV)
