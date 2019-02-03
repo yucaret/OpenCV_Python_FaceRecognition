@@ -8,10 +8,10 @@
 - OpenCV_Contrib para Python
 - Tener un sistema de archivos de la siguiente manera
 
-    - FaceRecognition (1)
-        - dataset (2)
-            - claudia_caceres (3)
-                - U1_ClaudiaCaceres_1.jpg (4)
+    - FaceRecognition (i)
+        - dataset (ii)
+            - claudia_caceres (iii)
+                - U1_ClaudiaCaceres_1.jpg (iv)
                 - U1_ClaudiaCaceres_2.bmp
                 - ...
                 - U1_ClaudiaCaceres_30.jpg
@@ -25,11 +25,11 @@
             - Nombre_ApellidoN
         - output
             - aquí se descargará el video
-        - Face_Recognition_Train.py (5)
-        - Face_Recognition_Video.py (6)
-        - haarcascade_frontalface_default.xml  (7)
-        - usuarios.txt (8)
-        - usuarios.yml (9)
+        - Face_Recognition_Train.py (v)
+        - Face_Recognition_Video.py (vi)
+        - haarcascade_frontalface_default.xml  (vii)
+        - usuarios.txt (viii)
+        - usuarios.yml (ix)
       
     Descripción:
     1) Carpeta Principal.
