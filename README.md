@@ -35,9 +35,9 @@ Les presento el código fuente de reconocimiento facial que he desarrollado, la 
       
     Descripción:
     1) Carpeta Principal.
-    2) Carpeta que contendrá todas las imágenes de las personas que se quiere reconocer, recomiendo unas 50 imagenes por persona.
-    3) El nombre de la carpeta debe de tener el formato "Nombre_Apellido".
-    4) El nombre de la imágen debe de tener el formato "U#IdentificadorUnico_NombreApellido_#NumeroConsecutivo".
+    2) Carpeta: la que contendrá todas las imágenes de las personas que se quiere reconocer, recomiendo unas 50 imagenes por persona.
+    3) Carpeta: El nombre de la carpeta debe de tener el formato "Nombre_Apellido".
+    4) Archivo JPG,BMP,etc.. : El nombre de la imágen debe de tener el formato "U#IdentificadorUnico_NombreApellido_#NumeroConsecutivo".
     5) Archivo que entrenará el algoritmo.
     6) Archivo que levantará el video, utilizará el algoritmo entrenado, detectará y reconocerá los rostros.
     7) Archivo entrenado que servirá para detectar los rostro de las imágenes, propio del OpenCV.
