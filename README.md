@@ -1,9 +1,9 @@
-# Codigo Fuente para Reconocimiento Facial con Python y OpenCv
-
+# Código Fuente para Reconocimiento Facial con Python y OpenCV
 
 ## Requerimientos
 
 - Python 3.6
+- Anaconda 3
 - OpenCV para Pyhton
 - OpenCV_Contrib para Python
 - Tener un sistema de archivos de la siguiente manera
@@ -45,5 +45,5 @@
 ## Pasos
 
  1) Levantar el file Face_Recognition_Train.py en su IDE predilecto, en mi caso es Spyder, y darle play, el proceso cargará todas las imagenes y creara un archivo output entrenado para reconocer rostro, además creara un archivo banco de datos con los nombres de las personas a reconocer.
- 2) Levantar el file Face_Recognition_Video.py, este creara un video en linea detectando y reconociendo el rostro de la persona que sale en el video.
- 3) Disfruta del código :)
+ 2) Levantar el file Face_Recognition_Video.py, este creará un video en línea, el programa detectará y reconocerá el rostro de la persona que sale en el video y lo guardará en la carpeta "output" cuando presiones "q".
+ 3) Disfruta del código :).
