@@ -1,5 +1,7 @@
 # Código Fuente para Reconocimiento Facial con Python y OpenCV
 
+Les presento el código fuente de reconocimiento facial que he desarrollado, la lógica no es nada del otro mundo, el modelo sigue la misma estructura que cualquier modelo de predicción, es decir, al modelo le das los valores X para que devuelva los Y prediction, en este caso los X son las distintas caras del usuario y el Y es el nombre, espero lo disfruten.
+
 ## Requerimientos
 
 - Python 3.6
